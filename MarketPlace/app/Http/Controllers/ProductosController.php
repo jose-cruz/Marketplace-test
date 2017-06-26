@@ -22,4 +22,18 @@ class ProductosController extends Controller
 
     }
 
+    public function create(){
+
+        return view('productos.create');
+
+}
+
+    public function store(){
+
+        Producto::create(request(['nombre', 'peso', 'valor', 'stock']));
+
+        return redirect('/productos');
+
+    }
+
 }

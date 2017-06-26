@@ -10,21 +10,26 @@
 
 <body>
 
-@foreach($productos as $producto)
+    @foreach($productos as $producto)
 
-    <li>
+        <li>
 
-        <a href="/productos/ {{ $producto->id  }}">
+            <a href="/productos/ {{ $producto->id  }}">
 
-            {{ $producto->nombre }}
+                {{ $producto->nombre }}
 
-        </a>
+            </a>
 
-    </li>
+        </li>
 
-@endforeach
+    @endforeach
 
 
+
+
+
+
+    <h1><a href="/producto/create/">Poducto nuevo</a></h1>
 
 </body>
 
