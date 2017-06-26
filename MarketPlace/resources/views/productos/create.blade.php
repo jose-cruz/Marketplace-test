@@ -1,15 +1,10 @@
-<!DOCTYPE html>
+@extends('layout')
 
-<html>
-
-<head>
-
-    <title></title>
-
-</head>
-
-<body>
-
+@section('content')
+<div>
+    <h1>Producto Nuevo</h1>
+</div>
+<div>
 <form Method ='POST' Action ='/productos'>
     {{ csrf_field() }}
     Nombre del Producto:<br>
@@ -23,7 +18,6 @@
 
     <input type="submit" value="Submit">
 </form>
+</div>
 
-</body>
-
-</html>
+@endsection

@@ -1,36 +1,31 @@
-<!DOCTYPE html>
+@extends('layout')
 
-<html>
+@section('content')
+    <div>
+        <div>
+            <h1>Productos Disponibles</h1>
+        </div>
 
-<head>
+        <div>
+            @foreach($productos as $producto)
 
-    <title></title>
+                <li>
 
-</head>
+                    <a href="/productos/ {{ $producto->id  }}">
 
-<body>
+                        {{ $producto->nombre }}
 
-    @foreach($productos as $producto)
+                    </a>
 
-        <li>
+                </li>
 
-            <a href="/productos/ {{ $producto->id  }}">
+            @endforeach
+        </div>
+        <div>
+            <br>
+            <h2>Desea postear un producto?</h2>
+            <h3><a href="/producto/create/">Ingresar producto nuevo!</a></h3>
+        </div>
+    </div>
+@endsection
 
-                {{ $producto->nombre }}
-
-            </a>
-
-        </li>
-
-    @endforeach
-
-
-
-
-
-
-    <h1><a href="/producto/create/">Poducto nuevo</a></h1>
-
-</body>
-
-</html>

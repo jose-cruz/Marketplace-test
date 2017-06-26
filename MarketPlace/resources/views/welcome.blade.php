@@ -1,17 +1,18 @@
-<!DOCTYPE html>
+@extends('layout')
 
-<html>
+@section('content')
 
-<head>
+    <div class="container">
 
-    <title></title>
+    <div class="starter-template">
+        <h1>Bienvenido a MarketPlace</h1>
+    </div>
+    <div>
+        <br>
+        <h2><a href="/productos/">Ver Productos</a></h2>
+    </div>
+    </div><!-- /.container -->
 
-</head>
 
-<body>
 
-    <h1><a href="/productos/">Ver Productos</a></h1>
-
-</body>
-
-</html>
+@endsection
