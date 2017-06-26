@@ -4,8 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Producto extends Model
-{
+class Producto extends Model{
+
+    protected $guarded = [];
 
     public static function precioTotal(Producto $producto){
 
